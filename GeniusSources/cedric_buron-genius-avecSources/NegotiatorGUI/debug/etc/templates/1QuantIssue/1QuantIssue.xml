@@ -1,8 +1,0 @@
-<negotiation_template> 
-<utility_space number_of_issues="1"> 
-<objective name="1QuantIssue" index="0" description="" etype="objective" type="objective"> 
-<issue vtype="integer" lowerbound="0" upperbound="1000" name="theIssue" index="1" etype="integer" type="integer"> 
-</issue> 
-</objective> 
-</utility_space> 
-</negotiation_template> 
