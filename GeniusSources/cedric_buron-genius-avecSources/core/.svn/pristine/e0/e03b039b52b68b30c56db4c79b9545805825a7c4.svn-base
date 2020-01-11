@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- TEST REPO. IMPLEMENTATIONS ARE ALMOST EMPTY -->
+<repository fileName="boarepository.xml">
+	<biddingstrategies>
+		<biddingstrategy classpath="bin/resources/boa/Offering1.class" />
+		<biddingstrategy classpath="resources.boa.Offering2" />
+	</biddingstrategies>
+	<acceptanceconditions>
+		<acceptancecondition classpath="resources.boa.Acceptance1" />
+		<acceptancecondition classpath="bin/resources/boa/Acceptance2.class" />
+	</acceptanceconditions>
+	<opponentmodels>
+		<opponentmodel classpath="bin/resources/boa/OpponentModel1.class" />
+		<opponentmodel classpath="resources.boa.OpponentModel2" />
+	</opponentmodels>
+	<omstrategies>
+		<omstrategy classpath="bin/resources/boa/OMStrategy1.class" />
+		<omstrategy classpath="resources.boa.OMStrategy2" />
+	</omstrategies>
+</repository>

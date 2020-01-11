@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="dep/absolutelayout.jar"/>
+	<classpathentry kind="lib" path="dep/activation.jar"/>
+	<classpathentry kind="lib" path="dep/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="dep/asm-3.0.jar"/>
+	<classpathentry kind="lib" path="dep/asm-commons-3.0.jar"/>
+	<classpathentry kind="lib" path="dep/asm-tree-3.0.jar"/>
+	<classpathentry kind="lib" path="dep/combinatoricslib-2.0.jar"/>
+	<classpathentry kind="lib" path="dep/forms_rt-7.0.3.jar"/>
+	<classpathentry kind="lib" path="dep/forms-1.1-preview.jar"/>
+	<classpathentry kind="lib" path="dep/jai_imageio-1.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="dep/jai_imageio-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="dep/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="dep/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="dep/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="dep/jaxb1-impl.jar"/>
+	<classpathentry kind="lib" path="dep/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="dep/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="dep/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="dep/jfxrt.jar"/>
+	<classpathentry kind="lib" path="dep/jopt-simple-3.2-rc1-javadoc.jar"/>
+	<classpathentry kind="lib" path="dep/jopt-simple-3.2-rc1-sources.jar"/>
+	<classpathentry kind="lib" path="dep/jopt-simple-3.2-rc1.jar"/>
+	<classpathentry kind="lib" path="dep/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="dep/jtreetable.jar"/>
+	<classpathentry kind="lib" path="dep/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="dep/swing-layout-1.0.3.jar"/>
+	<classpathentry kind="lib" path="dep/swing-worker-1.1.jar"/>
+	<classpathentry kind="lib" path="dep/mockito-all-1.10.19.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath> 

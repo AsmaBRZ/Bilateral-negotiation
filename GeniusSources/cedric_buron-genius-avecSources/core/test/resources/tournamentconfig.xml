@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<multilateralTournamentsConfiguration>
+    <tournaments>
+        <tournament>
+            <deadline>
+                <value>180</value>
+                <type>ROUND</type>
+            </deadline>
+            <protocolItem/>
+            <mediator classPath="unknown.path">
+                <properties/>
+            </mediator>
+            <partyRepItems>
+                <party classPath="simple.party">
+                    <properties/>
+                </party>
+                <boaparty partyName="boaparty">
+                    <properties/>
+                    <biddingStrategy>
+                        <item classpath="bin/resources/boa/Offering1.class"/>
+                    </biddingStrategy>
+                    <acceptanceStrategy>
+                        <parameters value="0.6" name="p"/>
+                        <parameters value="0.3" name="q"/>
+                        <item classpath="resources.boa.Acceptance1"/>
+                    </acceptanceStrategy>
+                    <opponentModel>
+                        <item classpath="bin/resources/boa/OpponentModel1.class"/>
+                    </opponentModel>
+                    <omStrategy>
+                        <item classpath="bin/resources/boa/OMStrategy1.class"/>
+                    </omStrategy>
+                </boaparty>
+            </partyRepItems>
+            <partyProfileItems/>
+            <partyBItems/>
+            <partyBProfiles/>
+            <numberOfPartiesPerSession>2</numberOfPartiesPerSession>
+            <repetitionAllowed>false</repetitionAllowed>
+            <isRandomSessionOrder>false</isRandomSessionOrder>
+            <repeats>1</repeats>
+            <persistentDataType>DISABLED</persistentDataType>
+            <enablePrint>false</enablePrint>
+        </tournament>
+    </tournaments>
+</multilateralTournamentsConfiguration>

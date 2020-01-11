@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Domains" default="all" basedir=".">
+
+	<target name="domains">
+		<delete file="target/Domains.jar"/>
+		<jar destfile="target/Domains.jar">
+			<fileset dir="templates" includes="**/*" />
+		</jar>
+	</target>
+
+	<target name="domainsrepo">
+		<delete file="target/DomainsRepo.jar"/>
+		<jar destfile="target/DomainsRepo.jar">
+			<fileset dir="repositories" includes="**/*" />
+		</jar>
+	</target>
+
+	<target name="all" depends="domains, domainsrepo">
+	</target>
+
+
+</project>

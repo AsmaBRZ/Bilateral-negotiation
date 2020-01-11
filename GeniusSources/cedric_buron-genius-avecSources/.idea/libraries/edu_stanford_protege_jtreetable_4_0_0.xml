@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="edu.stanford.protege:jtreetable:4.0.0" type="repository">
+    <properties maven-id="edu.stanford.protege:jtreetable:4.0.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/stanford/protege/jtreetable/4.0.0/jtreetable-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

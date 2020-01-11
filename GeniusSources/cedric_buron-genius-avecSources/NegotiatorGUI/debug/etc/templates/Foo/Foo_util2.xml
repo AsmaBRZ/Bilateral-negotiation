@@ -1,0 +1,20 @@
+<utility_space> 
+<objective name="Foo" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="integer" lowerbound="0" upperbound="1000" name="Foo1" index="1" etype="integer" type="integer"> 
+<evaluator ftype="linear" offset="0.0" slope="0.001"> 
+</evaluator> 
+</issue> 
+<issue vtype="integer" lowerbound="0" upperbound="50" name="Foo2" index="2" etype="integer" type="integer"> 
+<evaluator ftype="linear" offset="1.0" slope="-0.02"> 
+</evaluator> 
+</issue> 
+<weight index="1" value="0.808615227250911"> 
+</weight> 
+<weight index="2" value="0.19138477274908897"> 
+</weight> 
+</objective> 
+<discount_factor value="1.0"> 
+</discount_factor> 
+<reservation value="0.0"> 
+</reservation> 
+</utility_space> 
