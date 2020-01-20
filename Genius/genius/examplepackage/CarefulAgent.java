@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.ArrayList; 
 
+import java.util.Collections;   
 import agents.SimpleAgent;
 import negotiator.Agent;
 import negotiator.Bid;
@@ -27,7 +29,9 @@ import negotiator.*;
 public class CarefulAgent extends Agent {
 	private Action actionOfPartner = null;
 	private Bid lastPartnerBid;
-  private List<Bid> acceptableBids;
+        private boolean init=true;
+        private Bid oldBid=null;
+	private List<Bid> acceptableBids;
 	/**
 	 * Note: {@link SimpleAgent} does not account for the discount factor in its
 	 * computations
@@ -39,19 +43,19 @@ public class CarefulAgent extends Agent {
 	 */
 	@Override
 	public void init() {
-    super.init();
-    acceptableBids = new ArrayList<Bid>();
-    BidIterator iter = new BidIterator(this.utilitySpace.getDomain());
-    while (iter.hasNext()) {
-      Bid bid = iter.next();
-      try {
-        if (getUtility(bid) >= utilitySpace.getReservationValue() && (Math.random() <= getUtility(bid))) {
-          this.acceptableBids.add(bid);
-        }
-      } catch (Exception e) {
-        e.printStackTrace();
-      }
-    }
+		super.init();
+		acceptableBids = new ArrayList<Bid>();
+		BidIterator iter = new BidIterator(this.utilitySpace.getDomain());
+		while (iter.hasNext()) {
+		 	Bid bid = iter.next();
+		    	try {
+		    		if (getUtility(bid) >= utilitySpace.getReservationValue() && (Math.random() <= getUtility(bid))) {
+		    			this.acceptableBids.add(bid);
+		    		}
+		    	} catch (Exception e) {
+		    		e.printStackTrace();
+			}
+		}
 	}
 
 	@Override
@@ -102,9 +106,9 @@ public class CarefulAgent extends Agent {
 
 	private boolean isAcceptable(Bid bid) {
 		if (this.acceptableBids.contains(bid)){
-      return true;
-    }
-			return false;
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -133,48 +137,29 @@ public class CarefulAgent extends Agent {
 	 *             present in the util space.
 	 */
 	private Bid getRandomBid() throws Exception {
-		HashMap<Integer, Value> values = new HashMap<Integer, Value>(); // pairs
-																		// <issuenumber,chosen
-																		// value
-																		// string>
-		List<Issue> issues = utilitySpace.getDomain().getIssues();
-		Random randomnr = new Random();
+                Bid bid;
+                Bid maxBid = this.utilitySpace.getMaxUtilityBid();
+                if(!init){
 
-		// create a random bid with utility>MINIMUM_BID_UTIL.
-		// note that this may never succeed if you set MINIMUM too high!!!
-		// in that case we will search for a bid till the time is up (3 minutes)
-		// but this is just a simple agent.
-		Bid bid = null;
-		do {
-			for (Issue lIssue : issues) {
-				switch (lIssue.getType()) {
-				case DISCRETE:
-					IssueDiscrete lIssueDiscrete = (IssueDiscrete) lIssue;
-					int optionIndex = randomnr.nextInt(lIssueDiscrete.getNumberOfValues());
-					values.put(lIssue.getNumber(), lIssueDiscrete.getValue(optionIndex));
-					break;
-				case REAL:
-					IssueReal lIssueReal = (IssueReal) lIssue;
-					int optionInd = randomnr.nextInt(lIssueReal.getNumberOfDiscretizationSteps() - 1);
-					values.put(lIssueReal.getNumber(),
-							new ValueReal(lIssueReal.getLowerBound()
-									+ (lIssueReal.getUpperBound() - lIssueReal.getLowerBound()) * (double) (optionInd)
-											/ (double) (lIssueReal.getNumberOfDiscretizationSteps())));
-					break;
-				case INTEGER:
-					IssueInteger lIssueInteger = (IssueInteger) lIssue;
-					int optionIndex2 = lIssueInteger.getLowerBound()
-							+ randomnr.nextInt(lIssueInteger.getUpperBound() - lIssueInteger.getLowerBound());
-					values.put(lIssueInteger.getNumber(), new ValueInteger(optionIndex2));
-					break;
-				default:
-					throw new Exception("issue type " + lIssue.getType() + " not supported by SimpleAgent2");
-				}
+                        Bid tmp=null;
+                        int cp=0;
+			for(int  i=0;i<acceptableBids.size();i++) {
+			    if (cp==0){
+			    	tmp = acceptableBids.get(i);
+			    	cp++;
+			    }else{
+			    	bid = acceptableBids.get(i);
+			        if(getUtility(bid)>getUtility(tmp) && getUtility(bid) < getUtility(this.oldBid)){
+			        	tmp=bid;
+					
+			        }
+			    }  
 			}
-			bid = new Bid(utilitySpace.getDomain(), values);
-		} while (getUtility(bid) < MINIMUM_BID_UTILITY);
-
-		return bid;
+			maxBid=tmp;
+                        this.oldBid=maxBid;
+		}
+		this.init=false;
+		return maxBid;
 	}
 
 	/**
@@ -211,4 +196,6 @@ public class CarefulAgent extends Agent {
 	double sq(double x) {
 		return x * x;
 	}
+
+
 }

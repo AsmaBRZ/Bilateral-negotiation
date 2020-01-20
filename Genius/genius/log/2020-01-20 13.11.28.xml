@@ -1,0 +1,7 @@
+<a>
+<NegotiationOutcome currentTime="2020-01-20 13:14:11" timeOfAgreement="1.0" bids="0" domain="etc/templates/anac/y2014/10issues/10issues-domain.xml" lastAction="null" runNumber="0" finalOutcome="Reservation" errors="JudgeTimeout: negotiation was timed out because agent is in loop or failed compiling" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Simple Agent" discount="1.0" agentClass="agents.SimpleAgent" utilspace="etc/templates/anac/y2014/10issues/profile-1.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/anac/y2014/10issues/profile-2.xml" finalUtility="0.0" discountedUtility="0.0" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.0" AcceptedBy=""> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/anac/y2014/10issues/profile-2.xml" Opponent-agentName="Simple Agent" Opponent-agentClass="agents.SimpleAgent" Opponent-utilspace="etc/templates/anac/y2014/10issues/profile-1.xml" finalUtility="0.0" discountedUtility="0.0" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.0" AcceptedBy=""> 
+</resultsOfAgent> 
+</NegotiationOutcome> 

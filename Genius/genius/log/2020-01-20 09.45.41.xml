@@ -1,0 +1,37 @@
+<a>
+<NegotiationOutcome currentTime="2020-01-20 09:47:46" timeOfAgreement="0.025160741038888892" bids="4" domain="etc/templates/pie/pie_domain.xml" lastAction="(Accept  bid:Bid[Pie: a879, ])" runNumber="0" finalOutcome="Reservation" errors="" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Simple Agent" discount="1.0" agentClass="examplepackage.ExampleAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Simple Agent" Opponent-agentClass="examplepackage.ExampleAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.879" discountedUtility="0.879" bestAcceptableBid="0.879" bestDiscountedAccepableBid="0.020156168244444442" maxUtility="1.0" normalizedUtility="0.879" AcceptedBy="agentA"> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Simple Agent" discount="1.0" agentClass="examplepackage.ExampleAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Simple Agent" Opponent-agentClass="examplepackage.ExampleAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.879" discountedUtility="0.879" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.879" AcceptedBy="agentA"> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
+<NegotiationOutcome currentTime="2020-01-20 10:09:28" timeOfAgreement="6.524977777777778E-5" bids="2" domain="etc/templates/pie/pie_domain.xml" lastAction="(Accept  bid:Bid[Pie: a987, ])" runNumber="0" finalOutcome="Reservation" errors="" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="WhaleAgent" discount="1.0" agentClass="agents.anac.y2014.AgentWhale.WhaleAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Agent_K2" Opponent-agentClass="agents.anac.y2011.AgentK2.Agent_K2" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.987" discountedUtility="0.987" bestAcceptableBid="0.987" bestDiscountedAccepableBid="6.151257777777777E-5" maxUtility="1.0" normalizedUtility="0.987" AcceptedBy="agentA"> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Agent_K2" discount="1.0" agentClass="agents.anac.y2011.AgentK2.Agent_K2" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="WhaleAgent" Opponent-agentClass="agents.anac.y2014.AgentWhale.WhaleAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.987" discountedUtility="0.987" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.987" AcceptedBy="agentA"> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
+<NegotiationOutcome currentTime="2020-01-20 12:07:32" timeOfAgreement="1.4009304444444445E-4" bids="1" domain="etc/templates/pie/pie_domain.xml" lastAction="(Accept  bid:Bid[Pie: a115, ])" runNumber="0" finalOutcome="Reservation" errors="" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.115" discountedUtility="0.115" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.115" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.115" discountedUtility="0.115" bestAcceptableBid="0.115" bestDiscountedAccepableBid="1.3371504444444445E-4" maxUtility="1.0" normalizedUtility="0.115" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
+<NegotiationOutcome currentTime="2020-01-20 12:30:21" timeOfAgreement="5.1915616666666665E-5" bids="1" domain="etc/templates/pie/pie_domain.xml" lastAction="(Accept  bid:Bid[Pie: a277, ])" runNumber="0" finalOutcome="Reservation" errors="" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.277" discountedUtility="0.277" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.277" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.277" discountedUtility="0.277" bestAcceptableBid="0.277" bestDiscountedAccepableBid="4.602188888888889E-5" maxUtility="1.0" normalizedUtility="0.277" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
+<NegotiationOutcome currentTime="2020-01-20 12:32:36" timeOfAgreement="0.002177801" bids="1" domain="etc/templates/pie/pie_domain.xml" lastAction="(Accept  bid:Bid[Pie: a963, ])" runNumber="0" finalOutcome="Reservation" errors="" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.963" discountedUtility="0.963" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.963" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.963" discountedUtility="0.963" bestAcceptableBid="0.963" bestDiscountedAccepableBid="0.0018905562000000001" maxUtility="1.0" normalizedUtility="0.963" AcceptedBy="agentB"> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
+<NegotiationOutcome currentTime="2020-01-20 12:32:48" timeOfAgreement="1.0" bids="1" domain="etc/templates/pie/pie_domain.xml" lastAction="(Offer  bid:Bid[Pie: a265, ])" runNumber="0" finalOutcome="Reservation" errors="JudgeTimeout: negotiation was timed out because agent is in loop or failed compiling" startingAgent="A"> 
+<resultsOfAgent agent="A" agentName="Careful Agent" discount="1.0" agentClass="examplepackage.CarefulAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Simple Agent" Opponent-agentClass="examplepackage.ExampleAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.0" discountedUtility="0.0" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.0" AcceptedBy=""> 
+</resultsOfAgent> 
+<resultsOfAgent agent="B" agentName="Simple Agent" discount="1.0" agentClass="examplepackage.ExampleAgent" utilspace="etc/templates/pie/pie_A.xml" Opponent-agentName="Careful Agent" Opponent-agentClass="examplepackage.CarefulAgent" Opponent-utilspace="etc/templates/pie/pie_A.xml" finalUtility="0.0" discountedUtility="0.0" bestAcceptableBid="0.0" bestDiscountedAccepableBid="0.0" maxUtility="1.0" normalizedUtility="0.0" AcceptedBy=""> 
+</resultsOfAgent> 
+</NegotiationOutcome> 
